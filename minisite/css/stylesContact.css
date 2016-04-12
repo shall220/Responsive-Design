@@ -1,0 +1,212 @@
+/*obviously this needs somekind of PHP or ajax (which i don't know how to use yet)
+to talk to a server so it is just made for the purposes of this assignment and does not 
+actually send anything to the server*/
+
+/*limit over all size of the form to stop it looking odd on large screens*/
+.form{
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*border etc around the form maintaining theme*/
+.contactBox
+{	
+	width: 96%;
+	padding: 1%;
+	margin: 1%;
+	display: block;
+	border: 1px solid #999999;
+	border-radius: 2px;	
+	box-shadow: 0px 0px 15px #A8A8A8; 
+	background: linear-gradient(135deg, #fff 50%,	#F0F0F0  100%);
+	float: left;	
+}
+
+
+
+/*remove bullet points and default formatting from list*/
+ul
+{
+	
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*Indent labels slighlty seems more plesent to look at (I asked my wife =])*/ 
+label 
+{
+	font-size: 1.2em;
+	padding: 0 0 0 1%;
+}
+
+/*set color of label when its not valid*/
+.required
+{    
+    color: #FF0000;    
+}
+
+/*set colour of * of label*/
+span
+{    
+    color: #ffa500;	    
+}
+
+
+/*formatting for name and email fields - make it full width and give it height
+set font/font-size* etc*/
+.decorate
+{
+    width: 100%;
+	padding: 10px 15px 10px 15px;
+    margin: 3px 0 10px 0px;
+    box-sizing: border-box;
+    border: 1px solid #A8A8A8;
+    border-radius: 2px;
+    outline: none;
+	font-family:  "Cambria", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 1em;
+}
+
+
+
+/*Change email and name feilds area to indicate focus*/
+input[type=text]:focus 
+{
+    border: 1px solid #1a1a1a;
+    box-shadow: 0px 0px 15px #A8A8A8;
+}
+
+
+/*set font and font size, also indent slightly to match labels for submit button*/
+input[type=submit]
+{
+	width: 100%;
+	margin-bottom: 2px;
+	border: 1px solid #A8A8A8;
+    border-radius: 2px;	
+	height: 40px;
+	color: #fff;
+	background: #0b3c5d;
+	font-family:  "Cambria", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 1.2em;	
+}
+
+/*set color and style for buttons during mouse hover*/
+input.submit:hover 
+{
+	background: linear-gradient( 0deg, #286da8, #0b3c5d  );
+	font-size:1.3em;
+}
+
+/*match other buttons to submit button and create space between them*/ 
+input[type=button]
+{
+	width: 100%;
+	margin-bottom: 2px;	
+	height: 40px;
+	color: #fff;
+	background: #0b3c5d;
+	border: 1px solid #A8A8A8;
+    border-radius: 2px;
+	font-family:  "Cambria", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 1.2em;
+}
+
+
+/*formatting for message area - make it full width and give it height, limit
+reszing to vertical only, set font/font-size etc*/
+textarea
+{
+    width: 100%;
+    height: 300px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 2px;
+	margin-bottom: 1%;
+    box-sizing: border-box;
+    border: 1px solid #A8A8A8;
+    border-radius: 2px;
+    outline: none;
+	font-family:  "Cambria", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 1em;
+	resize: vertical;
+}
+
+/*Change main message area to indicate focus*/
+textarea:focus
+{
+    border: 1px solid #1a1a1a;
+    box-shadow: 0px 0px 15px #A8A8A8;
+}
+
+/*border and placement for canvas*/
+#myCanvas{
+	width: 47%;
+	margin-bottom:1%;
+	padding: 1%;
+    display: block;
+    border: 1px solid #999999;
+    border-radius: 2px;	
+    float: left;	
+}
+
+
+/*capture input formatting and decorating*/
+.decorateCapInput
+{
+    width: 49%;
+	padding: 10px 15px 10px 15px;
+    margin: 1% 0 1% 1%;
+    box-sizing: border-box;
+    border: 1px solid #A8A8A8;
+    border-radius: 2px;
+    outline: none;
+	font-family:  "Cambria", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 1em;
+}
+
+/* set indent of Captcha input label to match other label*/
+#required2
+{
+	margin-left: 1%;
+}
+
+/*create space between image and boarder, centre test*/
+figure
+{
+	margin: 2px;
+	padding: 2%;
+}
+
+#box3
+{
+	width: 100%;
+	float:left;
+	position: relative;
+}
+
+@media screen and (max-width : 760px){
+
+/*set canvas to full screen width*/	
+#myCanvas
+{	
+	width: 98%;	
+}
+
+/*set caption input to full screen width*/
+.decorateCapInput
+{
+	width: 100%;
+	margin: 0 0 1% 0;
+}
+
+
+}
+
+
+
+
+
+
+

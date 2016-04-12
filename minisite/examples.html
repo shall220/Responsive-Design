@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Examples</title>
+		<meta charset="utf-8">
+		<meta name="description" content="A quick look at Responsive Design"/>
+		<meta name="keywords" content="responsive, design, web design"/> 
+		<!-- Looks like keywords is redundant now? https://googlewebmastercentral.blogspot.com.au/2009/09/google-does-not-use-keywords-meta-tag.html -->
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="Shannon Hall"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+		<link rel="stylesheet" href="./css/styles.css"/>
+		<link rel="stylesheet" href="./css/stylesArtEx.css" />
+	  	<!--[if IE]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<a href="index.html">
+					<img class="centerImage" src="img/logo.png" alt="This is my sites logo">
+				</a>
+				<div class="attribution"><a href="./articles.html#logo1">Attribution</a></div>
+			</div>
+			<div id="motto">
+				<a href="./articles.html">
+					<img class="centerImage" src="img/logo2.png" alt="This is my sites logo">
+				</a>
+				<div class="attribution"><a href="./articles.html#logo1">Attribution</a></div>
+			</div>	
+		</header>
+		<nav>
+			<label for="dropDown" class="showHide">Menu</label>
+			<input type="checkbox" id="dropDown">    
+			<ul>
+				<li><a href="./index.html">Home</a></li>				
+				<li><a href="./articles.html">Articles</a></li>
+				<li id="selected"><a href="./examples.html">Examples</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</nav>		
+			<article>
+				<div class="main">
+					<a href="#skip" class="IntraNav">Next</a>
+					<h2>Accessible Navigation Bar</h2>
+					<p>	For this we can look at the Navigation Bar constructed for this site. 
+					Below are images of the Navigation Bar and how it reacts with different resolutions.</p>
+					<figure class="imageFormat">
+						<figcaption><h4>This is how it looks at high resolutions</h4></figcaption>
+						<img src="./img/nav.png" alt="Nav image here"/>
+					</figure>
+					<figure class="imageFormat">
+						<figcaption><h4>This is at a lower resolution</h4></figcaption>
+						<img src="./img/nav1.png" alt="Nav image here"/>
+					</figure>					
+					<figure class="imageFormat">
+						<figcaption><h4>This is how it looks for mobile users</h4></figcaption>					
+						<img src="./img/nav2.png" alt="Nav image here"/>
+					</figure>
+					<figure class="imageFormat">
+						<figcaption><h4>Here you can see how buttons react to give the user information</h4></figcaption>					
+						<img src="./img/nav3.png" alt="Nav image here"/>
+					</figure>					
+					<p>What makes this accessible? If you look at each image you can see that the Navigation Bar changes 
+					to suit the user. This allows people with any type of device to access the page and view it comfortably. 
+					This is responsive design at work. To further help accessibility the Navigation Bar reacts when the mouse 
+					hovers over a button so the user knows when they can select it. Once a button has been selected it stays 
+					highlighted to let the user know which page they are currently on.</p>
+					<a href="#bottom" class="IntraNav">Bottom</a>
+				</div>
+				<div class="main">
+				<a href="#skip0" class="IntraNav">Next</a>
+					<h2 id="skip">Accessible Images</h2>
+					<p>Here we can look at the images used for the sites logo and motto above the Navigation Bar.</p>
+					<figure class="imageFormat">
+						<figcaption><h4>This is an image at a higher resolution</h4></figcaption>					
+						<img src="./img/img.png" alt="Logo images here"/>
+					</figure>
+					<figure class="imageFormat">
+						<figcaption><h4>Here we see what a mobile user would see</h4></figcaption>					
+						<img src="./img/img1.png" alt="Logo images here"/>
+					</figure>
+					<figure class="imageFormat">
+						<figcaption><h4>This is what happens if the images cannot be loaded</h4></figcaption>					
+						<img src="./img/img2.png" alt="Logo images here"/>
+					</figure>
+					<p>The logo and motto both scale to the users needs, they stay the same size for most resolutions on a desktop. 
+					When they are displayed to a mobile user they are in a larger format so the user can see them properly.</p>
+					<p>The images have high contrast and are easy to make out in black and white.</p>
+					<p>They are very small in size making them light on bandthwidth being perfect for mobile viewing where connections 
+					are slow or usage is a concern.</p>
+					<p>	When zoomed right in there is no pixilation of the image, this way it can still be read/viewed nicely.</p>
+					<p>When the images cannot be displayed there is simple text to display in their place.</p>					
+					<a href="#bottom" class="IntraNav">Bottom</a>
+				</div>	
+				<div class="main">
+					<a href="#skip1" class="IntraNav">Next</a>
+					<h2 id="skip0">Intra-page Navigation</h2>
+					<p>In the <a href="#top">Top</a> and <a href="#bottom">Bottom</a> right of each example you may have noticed these</p>
+					<figure class="imageFormat">
+						<figcaption><h4>These are intra-page navigation links</h4></figcaption>					
+						<img src="./img/intraNav.png" alt="Intra Navigation Image Here"/>
+					</figure>
+					<p>Intra-page navigation helps users to quickly navigate from thier current place on a page to another.
+					This is particularly useful when viewing on a mobile phone. When viewing on mobile everything is "stacked" on top 
+					or under everything else making navigation a whole lot of scrolling, the intra-page navigation links help alleviate that.</p>					
+					<a href="#bottom" class="IntraNav">Bottom</a>
+				</div>	
+				<div class="main">
+				<a href="#top" class="IntraNav">Top</a>
+					<h2 id="skip1">Accessible Text</h2>
+					<p>Let's look at the text on this page for our example, I chose it because of its readability.</p>
+					<ul>
+						<li>There is no confusion over letters. The capital I, the lower case l and the 1 all have discernible features and are much less likely to be
+						confused with each other.</li>						
+						<li>The fonts is also unirversal to help try and prevent clutter or confusion. 
+						There is no swapping between fonts or font variations.</li>
+						<li>The font has a high contrast to the background ensuring it can be seen easily.</li>
+						<li> The font size is slightly larger than the defualt value to try and make sure there is no strain trying 
+						to read when the page loads naturally.</li> 
+					</ul>
+					<p>All these points help with accessibility, by limiting any factors that may may hinder peoples consumer experience.</p>
+				<a href="#bottom" class="IntraNav">Bottom</a>					
+				</div>
+				<div class="main">
+					<a href="#top" class="IntraNav">Top</a>
+					<h2>Colour Scheme and Contrast</h2>
+					<p>You guessed it, for this again we will look right here.</p>
+					<figure class="imageFormat">
+						<figcaption><h4>Here we can see everthing clearly and read easily due to contrast</h4></figcaption>					
+						<img src="./img/contrast.png" alt="Contrast Image here"/>
+					</figure>
+					<p>	Having good contrast is important to ensure readability. In this image you can see that the black text
+					on a white background and the white text on a dark blue background allows the text to stand out.</p>
+					<p>There is subtle background color adjustments to make the page seem pleasant without compromising the contrast.</p>
+					<p>The colour scheme allows for great contrast while also being pleasant to view.</p>
+					<a href="#bottom" class="IntraNav">Bottom</a>					
+				</div>
+			</article>			
+			<aside>
+				<ul>
+					<li class="sidebar"><figure>
+							<a href="http://webaim.org/" target="_blank"><img src="img/webAim.png" alt="http://webaim.org/"></a>				
+							<figcaption><h3>Find out more about web accessibility at WebAIM</h3><a href="#top">Top</a></figcaption>
+						</figure></li>					
+					<li class="sidebar"><figure>
+							<a href="http://tutorialzine.com/2015/08/quick-tip-css-only-dropdowns-with-the-checkbox-hack/"  target="_blank"><img src="img/tutzine.png" alt="http://tutorialzine.com"></a>				
+							<figcaption><h3>Check out this nifty css trick to create drop down menus without javascript</h3><a href="#top">Top</a></figcaption>
+						</figure></li>
+					<li class="sidebar"><figure>
+							<a href="http://logomakr.com/" target="_blank"><img src="img/logoMaker.png" alt="http://logomakr.com/"></a>				
+							<figcaption><h3>Here is a site that helps you to make a quick easy logo</h3><a href="#top">Top</a></figcaption>
+						</figure></li>
+					<li class="sidebar"><figure>
+							<a href="http://developers.google.com/web/fundamentals/design-and-ui/responsive/?hl=en" target="_blank"><img src="img/googleDev.png" alt="http://developers.google.com"></a>				
+							<figcaption><h3>Google developers have a good intro to responsive design here</h3><a href="#top">Top</a></figcaption>
+						</figure></li>
+					<li class="sidebar"><figure>
+							<a href="http://designschool.canva.com/blog/website-color-schemes/" target="_blank"><img src="img/colourSchemes.png" alt="http://designschool.canva.com/blog/website-color-schemes/"></a>				
+							<figcaption><h3>If you're looking for some ideas for colour schemes check out designschools</h3><a href="#top">Top</a></figcaption>
+						</figure></li>
+					<li class="sidebar"><figure>
+							<a href="https://www.codecademy.com/" target="_blank"><img src="img/codeCad.png" alt="https://www.codecademy.com/"></a>				
+							<figcaption><h3>Codecademy has great beginner courses in HTML and CSS you can do for free</h3><a href="#top">Top</a></figcaption>
+						</figure></li>							
+				</ul>
+			</aside>
+		<footer class="size">		
+				<h3 id="bottom">This is a sample site made by Shannon Hall for HIT-226 Mobile Web Structures</h3> 
+		</footer>			
+	</body>		
+</html>

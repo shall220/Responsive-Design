@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<meta name="description" content="A quick look at Responsive Design"/>
+		<meta name="keywords" content="responsive, design, web design"/> 
+		<!-- Looks like keywords is redundant now? https://googlewebmastercentral.blogspot.com.au/2009/09/google-does-not-use-keywords-meta-tag.html -->
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="Shannon Hall"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+		<link rel="stylesheet" href="./css/styles.css"/>
+		<link rel="stylesheet" href="./css/stylesContact.css" />
+		<!--[if IE]>
+			    <script src="js/html5shiv.js"></script>
+				<script src="js/respond.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<a href="index.html">
+					<img class="centerImage" src="img/logo.png" alt="This is my sites logo">
+				</a>
+				<div class="attribution"><a href="./articles.html#logo">Attribution</a></div>
+			</div>
+			<div id="motto">
+				<a href="./articles.html">
+					<img class="centerImage" src="img/logo2.png" alt="This is my sites logo">
+				</a>
+				<div class="attribution"><a href="./articles.html#logo">Attribution</a></div>
+			</div>		
+		</header>
+		<nav>
+			<label for="dropDown" class="showHide">Menu</label>
+			<input type="checkbox" id="dropDown">    
+			<ul>
+				<li><a href="./index.html">Home</a></li>				
+				<li><a href="./articles.html">Articles</a></li>
+				<li><a href="./examples.html">Examples</a></li>
+				<li id="selected"><a href="./contact.html">Contact</a></li>
+			</ul>
+		</nav>
+			<div class="form">
+				<form id="div1">
+				<ul class="contactBox" id="makeButton">
+					<li><label for="name" id="required">Full Name <span>*</span></label>
+					<input type="text" id="name" name="name" class="decorate" placeholder="Type first name and last name here......" required></li>
+					<li><label for="email" id="required0">Email Address <span>*</span></label>
+					<input type="text" id="email" name="email" class="decorate" placeholder="Type email address here......" required></li>
+					<li><label for="userInput" id="required1">Your Message <span>*</span></label>
+					<textarea id="userInput" name="userInput" placeholder="Type your message here......" required></textarea></li>
+					<li><input type="submit" class="submit" id="submit" value="Submit"></li>				
+				</ul>	
+				</form>
+			</div>	
+			<div id="box3">
+				<figure>
+					<a href="https://twitter.com/malarkey/status/113221032634093569" target="_blank"><img src="img/quote.png" alt="Twitter quote"></a>				
+				</figure>
+				<p class="attribution"><a href="./articles.html#logo">Attributions</a></p>
+			</div>
+		<footer class="size">		
+				<p id="bottom">This is a sample site made by Shannon Hall for HIT-226 Mobile Web Structures</p> 
+		</footer>
+		<script type="text/javascript" src="js/addContent.js"> </script>		
+		<script type="text/javascript" src="js/contactPage.js"> </script>
+		<script type="text/javascript" src="js/canvas.js"> </script> 
+				
+	</body>
+		
+	
+			
+</html>
+
+

@@ -1,0 +1,139 @@
+/* Shannon Hall s266556 */
+
+
+/*create space for aside*/
+article 
+{		
+	width: 70%;
+	float: left;
+}
+
+/*style for headings*/
+div h2
+{ 	
+	margin: 0;
+	font-size: 1.3em;
+	padding: 0;
+}
+
+/*style for article divs*/
+.main
+{	
+	padding: 9px 9px 25px 9px;
+	margin: 10px 0px 10px 10px;
+	display: block;
+	border: 1px solid #999999;
+	border-radius: 2px;	
+	box-shadow: 0px 0px 15px #A8A8A8; 
+	background: linear-gradient(135deg, #fff 50%,	#F0F0F0  100%);	
+}
+
+/*fit aside next to acrtcle*/
+aside 
+{
+    width: 30%;
+    float: left;
+}
+
+/*remove list bullets and spacing from aside list*/
+aside ul{
+	list-style-type: none;
+	padding: 0;
+	margin-top: 10px;/*change to percent?*/
+}
+
+/* this allows figure to have a margin while still being able to 
+use hover for links other wise it would be inside .sidebar*/
+aside li{
+	border: 1px solid #999999;
+}
+
+/*style aside links*/
+.sidebar
+{	
+	margin: 10px 10px 0 10px;    
+	display: block;	
+	font-size:0.7em;
+	box-shadow: 0px 0px 15px #A8A8A8;
+	background: linear-gradient(135deg, #fff 50%,	#F0F0F0  100%);
+}
+
+	
+/*create space between image and boarder, centre caption text*/
+figure
+{
+	margin: 2px;
+	text-align: center;	
+}
+
+/*spacing for images in examples to remove clutter*/
+article figure
+{
+	Margin-top: 19px;
+}
+
+
+
+/* This puts a boarder around images where it was hard to follow the text*/
+.imageFormat
+{
+	border: 1px solid #A8A8A8;
+	padding: 10px 3px 10px 3px;
+}
+
+/*make aside list/links change to indicate clickable link*/
+aside li:hover  
+{
+	border: 1px solid #1a1a1a;
+	opacity: 0.7;
+	box-shadow: 0px 0px 15px #363636;	
+}
+
+
+@media screen and (max-width : 760px){
+
+/*make artlce stack and use full width*/
+article
+{
+	float: left;
+	width: 100%;
+}
+
+/*sytle artlce divs for mobile view*/
+.main
+{
+	margin: 1% 0 0 0;
+	box-shadow:0 0 0 0;
+}
+
+/*make artlce stack and use full width*/
+aside 
+{
+    width: 100%;
+	margin: auto;	
+}
+
+/*style for aside during mobile view*/
+.sidebar
+{
+	margin: 1% 0 0 0;
+	display: block;
+	border: 1px solid #B8B8B8;
+	font-size:1em;
+	box-shadow:0 0 0 0;    	
+}
+
+/*put margin between boarder and image to make things look more pleasant*/
+figure
+{
+	margin: 2px;
+	text-align: center;
+}
+	
+}
+
+
+
+
+
+
